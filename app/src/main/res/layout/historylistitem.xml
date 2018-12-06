@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176px"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176px"
+        android:gravity="center_vertical"
+        android:background="@mipmap/item_bg">
+
+        <TextView
+            android:id="@+id/textView_history_past_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70px"
+            android:gravity="center"
+            android:text="A15"
+            android:textColor="#02A2D6"
+            android:textSize="50px" />
+
+        <LinearLayout
+            android:layout_width="230px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_history_past_peoplecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1px"
+                android:text="5人"
+                android:textColor="#818181"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/textView_history_currentstate"
+                android:layout_width="230px"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="35px"
+                android:text="已过号"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60px"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:id="@+id/textView_history_arrivetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#818181"
+                android:textSize="35px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_history_calltimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:gravity="center"
+            android:text="3次"
+            android:textColor="#16a4fa"
+            android:textSize="40px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70px"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView_history_callicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/textView_history_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="18002591358"
+                android:textColor="#b3b5b6"
+                android:textSize="35px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

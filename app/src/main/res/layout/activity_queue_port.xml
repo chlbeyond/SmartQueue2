@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartpos="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <com.smartqueue2.commonview.HackyDrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--标题栏布局-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#2B343D">
+
+                <TextView
+                    android:id="@+id/textView_main_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="好好茶餐厅"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/main_activity_freetable" />
+            </LinearLayout>
+
+            <!--下边布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+                <!--左边布局-->
+                <LinearLayout
+                    android:id="@+id/left_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.lhh.apst.library.CustomPagerSlidingTabStrip
+                        android:id="@+id/tabStrip"
+                        style="@style/pagertabport_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="200px"
+                        android:fillViewport="false" />
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="11" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#dfdfdf"/>
+
+                <LinearLayout
+                    android:id="@+id/fetch_ll"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="21dp"
+                    android:gravity="center"
+                    android:background="@mipmap/fetch_blue_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取号"
+                        android:gravity="center"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@mipmap/fetch_icon"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--侧滑-->
+        <LinearLayout
+            android:layout_width="400px"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#EBEEF5"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/shopName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="162px"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:text="好好茶餐厅"
+                android:textColor="#333333"
+                android:textSize="35px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:background="#DFE0E1" />
+
+            <include layout="@layout/drawer_menu_port"></include>
+
+        </LinearLayout>
+    </com.smartqueue2.commonview.HackyDrawerLayout>
+</LinearLayout>

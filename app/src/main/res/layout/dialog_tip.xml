@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_round_white"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/top_round_blue"
+            android:text="提示"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="A1确认过号？"
+        android:textSize="15sp"
+        android:textColor="#565656"/>
+
+    <!--这个view的作用...-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_cancel_stroke"
+            android:layout_weight="1.0"
+            android:layout_marginRight="18dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="15sp"
+            android:textColor="#00a3d6"/>
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_certain_bg"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="18dp"
+            android:text="确定"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

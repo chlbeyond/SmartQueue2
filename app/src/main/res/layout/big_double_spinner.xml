@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/spinner_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/leftText_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:background="@drawable/shape_blue_stroke">
+
+            <View
+                android:layout_width="50px"
+                android:layout_height="50px"/>
+
+            <TextView
+                android:id="@+id/left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="30px"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/left_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_down" />
+
+            <View
+                android:layout_width="20px"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="18px"
+            android:gravity="center_horizontal"
+            android:text="~"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:id="@+id/rightText_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:background="@drawable/shape_blue_stroke">
+
+            <View
+                android:layout_width="50px"
+                android:layout_height="50px"/>
+
+            <TextView
+                android:id="@+id/right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="30px"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_down" />
+            <View
+                android:layout_width="20px"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/shape_blue_stroke">
+
+            <View
+                android:layout_width="40px"
+                android:layout_height="50px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:gravity="center"
+                android:text="删除"
+                android:textSize="25px" />
+
+            <View
+                android:layout_width="40px"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/createSpinner_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:background="@drawable/shape_blue_stroke">
+
+        <View
+            android:layout_width="30px"
+            android:layout_height="50px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:gravity="center"
+            android:text="+ 添加分组 "
+            android:textSize="25px" />
+
+        <View
+            android:layout_width="30px"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smartpos="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <com.smartqueue2.commonview.HackyDrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--标题栏布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#2B343D">
+
+                <TextView
+                    android:id="@+id/textView_main_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:text="好好茶餐厅"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/main_activity_freetable" />
+
+                <TextView
+                    android:id="@+id/reQueue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="clickButton"
+                    android:text="分组设置"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/main_activity_freetable"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/delete_table"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="clickButton"
+                    android:text="删除数据"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/main_activity_freetable"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/linearLayout1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="clickButton">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="50dp"
+                            android:text="查看昨天的数据"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/main_activity_freetable" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/logout_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="clickButton"
+                    android:text="注销"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/main_activity_freetable"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/setting_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="clickButton"
+                    android:text="设置"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/main_activity_freetable" />
+            </LinearLayout>
+
+            <!--下边布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:background="#e5ebf0"
+                android:orientation="horizontal">
+
+                <!--左边布局-->
+                <LinearLayout
+                    android:id="@+id/left_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/main_left_background"
+                    android:orientation="vertical">
+
+                    <com.lhh.apst.library.AdvancedPagerSlidingTabStrip
+                        android:id="@+id/tabStrip"
+                        style="@style/pagertab_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:fillViewport="false" />
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="11" />
+                </LinearLayout>
+
+                <!--右边布局-->
+                <LinearLayout
+                    android:id="@+id/right_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/main_left_background"
+                    android:orientation="vertical">
+
+                    <!--查询号码框-->
+                    <LinearLayout
+                        android:id="@+id/query_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/text_editnumber_selector_search"
+                        android:clickable="true"
+                        android:onClick="clickButton">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/search" />
+
+                        <TextView
+                            android:id="@+id/query_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="15"
+                            android:gravity="center_vertical"
+                            android:hint="查询号码"
+                            android:textColor="#67788d"
+                            android:textSize="@dimen/main_activity_query_number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:background="#fff"
+                        android:orientation="vertical">
+
+                        <!--就餐人数-->
+                        <LinearLayout
+                            android:id="@+id/peoplecount_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="@dimen/editmealpeoplecount_magin_left"
+                            android:layout_marginRight="@dimen/editmealpeoplecount_magin_left"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/text_editnumber_noselector"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:onClick="clickButton"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/peoplecount_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:hint="请输入就餐人数"
+                                android:textColor="#67788d"
+                                android:textSize="@dimen/main_activity_edit_peoplencount" />
+                        </LinearLayout>
+
+                        <!--手机号码-->
+                        <LinearLayout
+                            android:id="@+id/phone_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="@dimen/editmealpeoplecount_magin_left"
+                            android:layout_marginRight="@dimen/editmealpeoplecount_magin_left"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/text_editnumber_selector"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:onClick="clickButton"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/phone_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:hint="请输入手机号码"
+                                android:textColor="#67788d"
+                                android:textSize="@dimen/main_activity_edit_peoplencount" />
+                        </LinearLayout>
+
+                        <!--数字键盘-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:orientation="vertical">
+
+                            <!--1-3-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/s_button1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/button_magin_left_right"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="1"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/s_button2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="2"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/s_button3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="@dimen/button_magin_left_right"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="3"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <!--4-6-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/s_button4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/button_magin_left_right"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="4"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/s_button5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="5"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/s_button6"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="@dimen/button_magin_left_right"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="6"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <!--7-8-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/s_button7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/button_magin_left_right"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="7"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/s_button8"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="8"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/s_button9"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="@dimen/button_magin_left_right"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="9"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <!--ⓧ-←-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/button_delete"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/button_magin_left_right"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="ⓧ"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount" />
+
+                                <Button
+                                    android:id="@+id/s_button0"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="0"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/button_back"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="@dimen/button_magin_left_right"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/button_selector"
+                                    android:gravity="center"
+                                    android:onClick="clickButton"
+                                    android:text="←"
+                                    android:textColor="#141414"
+                                    android:textSize="@dimen/main_activity_edit_peoplencount" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--取号-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="@dimen/editmealpeoplecount_magin_left"
+                        android:layout_marginLeft="@dimen/button_magin_left_right"
+                        android:layout_marginRight="@dimen/button_magin_left_right"
+                        android:layout_marginTop="@dimen/editmealpeoplecount_magin_left"
+                        android:layout_weight="1.2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fetch_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selector_normal_bluedark"
+                            android:clickable="true"
+                            android:enabled="false"
+                            android:gravity="center"
+                            android:onClick="clickButton"
+                            android:text="取  号"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/main_activity_edit_peoplencount"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="275px"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#EBEEF5"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_left_menu_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="65px"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="好好茶餐厅"
+                android:textColor="#333333"
+                android:textSize="21px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:background="#DFE0E1" />
+
+            <include layout="@layout/left_menu_list"></include>
+
+        </LinearLayout>
+    </com.smartqueue2.commonview.HackyDrawerLayout>
+</LinearLayout>

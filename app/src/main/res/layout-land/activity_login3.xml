@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/new_login_bg"
+    tools:context="com.smartqueue2.login.Activity.Login3Activity">
+
+    <!--占位-->
+    <View
+        android:layout_width="520px"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148px"
+            android:layout_marginBottom="68px"
+            android:gravity="center"
+            android:text="彩虹云宝排队机"
+            android:textColor="@android:color/white"
+            android:textSize="35px" />
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!--公司、版本-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:layout_marginBottom="87px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳彩虹云宝网络有限公司"
+                android:layout_marginBottom="7px"
+                android:textColor="@android:color/white"
+                android:textSize="20px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.sanyipos.com"
+                android:layout_marginBottom="7px"
+                android:textColor="@android:color/white"
+                android:textSize="20px"/>
+
+            <TextView
+                android:id="@+id/version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前版本:5.1.2018"
+                android:textColor="@android:color/white"
+                android:textSize="20px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--占位-->
+    <View
+        android:layout_width="520px"
+        android:layout_height="match_parent" />
+</LinearLayout>

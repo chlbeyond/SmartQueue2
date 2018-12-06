@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="580px"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.smartqueue2.login.Activity.Fragment.QueueFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="21px"
+        android:text="请设置您的队列信息"
+        android:textColor="#101010"
+        android:textSize="25px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="43px"
+        android:orientation="vertical">
+
+        <!--A 、 B-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--A-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:layout_marginRight="8px"
+                    android:textSize="20px"
+                    android:textColor="#101010"/>
+
+                <com.smartqueue2.commonview.NewDoubleSpinner
+                    android:id="@+id/spinnerA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!--B-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:layout_marginRight="8px"
+                    android:textSize="20px"
+                    android:textColor="#101010"/>
+
+                <com.smartqueue2.commonview.NewDoubleSpinner
+                    android:id="@+id/spinnerB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--C 、 D-->
+        <LinearLayout
+            android:layout_marginTop="60px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--C-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:layout_marginRight="8px"
+                    android:textSize="20px"
+                    android:textColor="#101010"/>
+
+                <com.smartqueue2.commonview.NewDoubleSpinner
+                    android:id="@+id/spinnerC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!--D-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:layout_marginRight="8px"
+                    android:textSize="20px"
+                    android:textColor="#101010"/>
+
+                <com.smartqueue2.commonview.NewDoubleSpinner
+                    android:id="@+id/spinnerD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--E-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="60px"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E"
+                android:layout_marginRight="8px"
+                android:textSize="20px"
+                android:textColor="#101010"/>
+
+            <com.smartqueue2.commonview.NewDoubleSpinner
+                android:id="@+id/spinnerE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46px"
+        android:layout_marginRight="46px"
+        android:layout_marginTop="123px">
+
+        <TextView
+            android:id="@+id/previous_tv"
+            android:layout_width="0dp"
+            android:layout_height="67px"
+            android:layout_marginRight="26px"
+            android:layout_weight="1"
+            android:background="@mipmap/login_btn"
+            android:gravity="center"
+            android:text="上一步"
+            android:textColor="@android:color/white"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/next_tv"
+            android:layout_width="0dp"
+            android:layout_height="67px"
+            android:layout_weight="1"
+            android:background="@mipmap/login_btn"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:textSize="22px" />
+    </LinearLayout>
+
+</LinearLayout>

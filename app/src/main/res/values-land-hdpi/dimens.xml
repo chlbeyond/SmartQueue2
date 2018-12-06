@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="login_button_text">32sp</dimen>
+    <dimen name="main_activity_freetable">25sp</dimen>
+    <dimen name="main_activity_table_textsize">23sp</dimen>
+    <dimen name="main_activity_query_number">28sp</dimen>
+    <dimen name="main_activity_edit_peoplencount">28sp</dimen>
+    <dimen name="main_activity_table_textsize_radius">8sp</dimen>
+    <dimen name="main_activity_listview_number">35sp</dimen>
+    <dimen name="main_activity_listview_peoplecount">25sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="editquerynumber_magin_top">8dp</dimen>
+    <dimen name="editquerynumber_magin_left">15dp</dimen>
+    <dimen name="editmealpeoplecount_magin_left">20dp</dimen>
+    <dimen name="button_magin_left_right">25dp</dimen>
+    <dimen name="tab_number_magin_left_right">10dp</dimen>
+    <dimen name="listview_item_call_text">20sp</dimen>
+    <dimen name="listview_item_height">80dp</dimen>
+    <dimen name="listview_item_magin_left">60dp</dimen>
+
+</resources>

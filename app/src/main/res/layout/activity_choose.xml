@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smartqueue2.login.Activity.ChooseActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/enterLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="进入登录界面"
+        android:gravity="center"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/enterLogin2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="进入第二种登录界面"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/enterLogin3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="进入登录界面"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/enterShopInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="进入门店信息"
+        android:gravity="center"/>
+
+</LinearLayout>

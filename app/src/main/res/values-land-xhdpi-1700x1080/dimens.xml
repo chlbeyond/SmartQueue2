@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="login_button_text">25sp</dimen>
+    <dimen name="main_activity_freetable">20sp</dimen>
+    <dimen name="main_activity_table_textsize">16sp</dimen>
+    <dimen name="main_activity_query_number">18sp</dimen>
+    <dimen name="main_activity_edit_peoplencount">18sp</dimen>
+    <dimen name="main_activity_table_textsize_radius">6sp</dimen>
+    <dimen name="main_activity_listview_number">25sp</dimen>
+    <dimen name="main_activity_listview_peoplecount">18sp</dimen>
+    <dimen name="editquerynumber_magin_top">6dp</dimen>
+    <dimen name="editquerynumber_magin_left">7.5dp</dimen>
+    <dimen name="editmealpeoplecount_magin_left">10dp</dimen>
+    <dimen name="button_magin_left_right">12.5dp</dimen>
+    <dimen name="tab_number_magin_left_right">5dp</dimen>
+    <dimen name="listview_item_call_text">15sp</dimen>
+    <dimen name="listview_item_height">60dp</dimen>
+    <dimen name="setting_back_textsize">20sp</dimen>
+    <dimen name="listview_item_magin_left">50dp</dimen>
+
+</resources>

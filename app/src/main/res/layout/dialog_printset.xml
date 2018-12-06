@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_round_white">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/top_round_blue"
+        android:text="打印机信息"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打印机状态"
+            android:layout_gravity="center"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/printState_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#404040"
+            android:text="正常"
+            android:background="@drawable/shape_account_edit_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接方式    "
+            android:layout_gravity="center"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/linkType_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:textColor="#404040"
+            android:text="AIDL"
+            android:background="@drawable/shape_account_edit_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打印尺寸    "
+            android:layout_gravity="center"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/printSize_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:textColor="#404040"
+            android:text="58mm"
+            android:background="@drawable/shape_account_edit_bg"/>
+    </LinearLayout>
+
+    <!--这个view的作用...-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/printTest_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_certain_bg"
+            android:gravity="center"
+            android:text="打印测试"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/save_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/button_certain_bg"
+            android:gravity="center"
+            android:text="关闭"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

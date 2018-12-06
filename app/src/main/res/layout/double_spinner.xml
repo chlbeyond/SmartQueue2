@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/spinner_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_left"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_stroke"
+                android:drawableRight="@mipmap/arrow_copy"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_left1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_stroke"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="1"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="~"
+                android:textSize="25sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_right"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_stroke"
+                android:gravity="center"
+                android:drawableRight="@mipmap/arrow_copy"
+                android:paddingRight="5dp"
+                android:text="1"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_right1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_blue_stroke"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="1"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/operation_ll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/save_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_blue_stroke"
+                android:gravity="center"
+                android:text="保存"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cancel_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_blue_stroke"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_blue_stroke"
+                android:gravity="center"
+                android:text="删除"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/createSpinner_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/shape_blue_stroke"
+        android:text=" + 增加队列 "
+        android:textSize="18sp"/>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="580px"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.smartqueue2.login.Activity.Fragment.ShopFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="21px"
+        android:text="请设置您的门店信息"
+        android:textColor="#101010"
+        android:textSize="25px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="51px"
+        android:layout_marginRight="51px"
+        android:layout_marginTop="43px"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="14px"
+            android:gravity="center"
+            android:text="门店名称"
+            android:textColor="#101010"
+            android:textSize="23px" />
+
+        <EditText
+            android:id="@+id/shopName_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_account_edit_bg"
+            android:hint="请输入门店名称"
+            android:maxLines="1"
+            android:textColor="#101010"
+            android:textColorHint="#d1d1d1"
+            android:textCursorDrawable="@null"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginLeft="51px"
+        android:layout_marginRight="51px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="14px"
+            android:gravity="center"
+            android:text="门店地址"
+            android:textColor="#101010"
+            android:textSize="23px" />
+
+        <EditText
+            android:id="@+id/address_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_account_edit_bg"
+            android:hint="请输入门店地址"
+            android:maxLines="1"
+            android:textColor="#101010"
+            android:textColorHint="#d1d1d1"
+            android:textCursorDrawable="@null"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="51px"
+        android:layout_marginRight="51px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="14px"
+            android:gravity="center"
+            android:text="联系电话"
+            android:textSize="23px"
+            android:textColor="#101010"/>
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_account_edit_bg"
+            android:hint="请输入联系电话"
+            android:maxLines="1"
+            android:textColor="#101010"
+            android:textColorHint="#d1d1d1"
+            android:textCursorDrawable="@null"
+            android:textSize="25px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/certain_tv"
+        android:layout_width="match_parent"
+        android:layout_height="67px"
+        android:layout_marginTop="124px"
+        android:layout_marginLeft="51px"
+        android:layout_marginRight="51px"
+        android:background="@mipmap/login_btn"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="25px">
+    </TextView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="410px"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.smartqueue2.login.Activity.Fragment.RemarkFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46px"
+        android:layout_marginTop="24px"
+        android:text="请设置排队单备注内容"
+        android:textColor="#101010"
+        android:textSize="25px" />
+
+    <EditText
+        android:id="@+id/remark_et"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_marginLeft="37px"
+        android:layout_marginRight="37px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/shape_account_edit_bg"
+        android:gravity="top"
+        android:hint="请输入..."
+        android:lineSpacingMultiplier="1"
+        android:textColor="#101010"
+        android:textColorHint="#d1d1d1"
+        android:textCursorDrawable="@null"
+        android:textSize="25px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67px"
+        android:layout_marginLeft="46px"
+        android:layout_marginRight="46px"
+        android:layout_marginTop="73px">
+
+        <TextView
+            android:id="@+id/previous_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="26px"
+            android:layout_weight="1"
+            android:background="@mipmap/login_btn"
+            android:gravity="center"
+            android:text="上一步"
+            android:textColor="@android:color/white"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/complete_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/login_btn"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@android:color/white"
+            android:textSize="22px" />
+    </LinearLayout>
+</LinearLayout>

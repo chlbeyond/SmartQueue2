@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">彩虹云宝排队系统</string>
+    <string name="app_name1">彩虹云宝排队机</string>
+
+    <!-- 权限 -->
+    <string name="no_write_permission">存储权限不可用</string>
+    <string name="request_write_permission">请在-应用设置-权限-中，允许彩虹点菜宝使用\'存储\'权限来保存用户数据</string>
+    <string name="request_write_never_permission">本应用需要内存读取功能才能使用,请在-设置-应用管理-彩虹点菜宝-权限-中，允许使用\'存储\'权限来保存用户数据</string>
+    <string name="open_permission_now">立即开启</string>
+    <string name="cancel_permission_now">取消</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="get_permission_failed">获取权限失败</string>
+    <string name="get_permission_successed">获取权限成功</string>
+
+    <string name="toast_2">服务已断开!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
